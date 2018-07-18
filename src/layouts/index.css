@@ -21,6 +21,7 @@ h1 {
 
 a  {
   text-decoration:none;
+  color: black;
 }
 
 tt,
@@ -65,6 +66,10 @@ pre tt:after {
 
 .pfimage {
   border: solid 1px black;
+}
+
+.text-area-link {
+  display: grid;
 }
 
 .pftext-area {
@@ -147,7 +152,7 @@ pre tt:after {
 
 }
 
-.pseudoHover > div.pftext-area {
+.pseudoHover div.pftext-area {
   grid-gap: 10px;
   max-height: 800px;
   opacity: 1;
@@ -160,7 +165,7 @@ pre tt:after {
   display: none;
 }
 
-.pseudoHover > div.pftext-area > div.pftitle {
+.pseudoHover div.pftext-area > div.pftitle {
   max-height: 200px !important;
   opacity: 1 !important;
   transition: max-height 0.8s ease-in !important;
@@ -175,7 +180,7 @@ pre tt:after {
   margin-top: 20px;
 }
 
-.pseudoHover > div.pftext-area > div.pftype {
+.pseudoHover div.pftext-area > div.pftype {
   max-height: 200px !important;
   opacity: 1 !important;
   transition: max-height 0.8s ease-in !important;
@@ -187,7 +192,7 @@ pre tt:after {
   transition: max-height 0.8s ease-in;
 }
 
-.pseudoHover > div.pftext-area >  div.pfdesc{
+.pseudoHover div.pftext-area >  div.pfdesc{
   max-height: 400px !important;
   opacity: 1 !important;
   transition: max-height 0.8s ease-in !important;
@@ -199,7 +204,7 @@ pre tt:after {
   transition: max-height 0.8s ease-in;
 }
 
-.pseudoHover > div.pftext-area > div.pftechs {
+.pseudoHover div.pftext-area > div.pftechs {
   max-height: 200px !important;
   opacity: 1 !important;
   transition: max-height 0.8s ease-in !important;
@@ -246,8 +251,13 @@ pre tt:after {
     max-width: none;
   }
 
-  .pftext-area {
+  .text-area-link {
     grid-column: 3 / 3;
+    min-height: 470px;
+    display: grid;
+  }
+  .pftext-area {
+
     display: grid;
     grid-template-columns: 1fr 5fr 5fr 1fr;
     grid-template-rows: 1fr 2fr 2fr 2fr 2fr 2fr 2fr;

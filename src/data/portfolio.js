@@ -35,7 +35,7 @@ export default [
     "type":"Website",
     "description": "A news-magazine style site that doesn’t pull punches, appeals to conservatives and leaves plenty of space for advertising. A working site backed by a CMS, delivered to the client in under 48 hours.",
     "techs": ["Wordpress", "HTML", "CSS","JS","PHP","MySQL"],
-    "link": "https://www.theamericancorrespondent.com",
+    "link": "https://www.americancorrespondent.com",
     "image": americancorrespondent
   },
   {
