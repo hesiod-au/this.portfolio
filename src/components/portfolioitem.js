@@ -1,5 +1,5 @@
 import React from 'react';
-import esch from "../images/escheresque.png"
+
 
 var imgStyle = {
   'marginBottom': '-6px'
@@ -7,9 +7,6 @@ var imgStyle = {
 var hovered = false;
 var togglePseudo = false;
 
-const backStyle = {
-  backgroundImage: esch
-}
 
 
 
@@ -21,14 +18,10 @@ class PortfolioItem extends React.PureComponent {
   }
 
   handleHover(event) {
-    //hovered = true;
+    hovered = true;
     console.log(event.target);
     if (event.target.className=="innerImg") {
     // event.target.parentNode.classList.remove("noClick");
-    }
-    if (event.target.className=="imgLink noClick") {
-    //console.log(event.target);
-    //event.target.classList.remove("noClick");
     }
     if (event.target.className=="pfimage") {
     // event.target.firstChild.classList.remove("noClick");
@@ -40,17 +33,6 @@ class PortfolioItem extends React.PureComponent {
     console.log("click");
     console.log(event.target);
     if (event.target.className=="innerImg" && !hovered) {
-      event.preventDefault();
-      if (togglePseudo) {
-        event.target.parentNode.parentNode.parentNode.classList.remove("pseudoHover");
-        togglePseudo = false;
-      }
-      else {
-        event.target.parentNode.parentNode.parentNode.classList.add("pseudoHover");
-        togglePseudo = true;
-      }
-    }
-    if (event.target.className=="imgLink noClick" && !hovered) {
       event.preventDefault();
       if (togglePseudo) {
         event.target.parentNode.parentNode.classList.remove("pseudoHover");
@@ -79,9 +61,9 @@ class PortfolioItem extends React.PureComponent {
     const {title, type, description, techs, link, image} = this.props
     return (
       <div className="portfolioleft-list-items">
-        <div className="pfimage" onClick={this.handleClick} onMouseOver={this.handleHover}><a href={link} onClick={this.handleClick} className="imgLink noClick"><img src={image} style={imgStyle} className="innerImg"/></a></div>
+        <div className="pfimage" onClick={this.handleClick} onMouseOver={this.handleHover}><img src={image} style={imgStyle} className="innerImg"/></div>
         <a href={link} className="text-area-link">
-          <div className="pftext-area" style={backStyle}>
+          <div className="pftext-area">
             <div className="pftitle"><h1>{title}</h1></div>
             <div className="pftype">{type}</div>
             <div className="pfdesc">{description}</div>

@@ -15,9 +15,9 @@ export default [
     "image": koganwatch
   },
   {
-    "title": "this.portfolioSite",
+    "title": "this.portfolio",
     "type":"Website",
-    "description": "This Site! A React website that pulls data from a file and dynamically creates portfolio presentation elements. Built from React Components, mobile first, responsive design, with CSS grid and animations used throughout. Built from scratch using a blank Gatsby framework: all CSS, React JS, and HTML is mine. ",
+    "description": "A React website that pulls data from a file and dynamically creates portfolio presentation elements. Built from React Components, mobile first, responsive design, with CSS grid and animations used throughout. Built from scratch using a blank Gatsby framework: all CSS, React JS, and HTML is mine. This site.",
     "techs": ["React", "HTML", "CSS","JS"],
     "link": "https://github.com/hesiod-au/this.portfolio.git",
     "image": thisport
@@ -33,7 +33,7 @@ export default [
   {
     "title": "The American Correspondent",
     "type":"Website",
-    "description": "A news-magazine style site that doesn’t pull punches, appeals to conservatives and leaves plenty of space for advertising. A working site backed by a CMS, delivered to the client in under 48 hours.",
+    "description": "A news-magazine style site that doesn’t pull punches and leaves plenty of space for advertising. A working site backed by a CMS, delivered to the client in under 48 hours.",
     "techs": ["Wordpress", "HTML", "CSS","JS","PHP","MySQL"],
     "link": "https://www.americancorrespondent.com",
     "image": americancorrespondent
