@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: 'Portfolio: Jebediah Cole'
+    title: 'Portfolio | Jebediah Cole'
   },
   pathPrefix: '/portfolio',
   plugins: [
